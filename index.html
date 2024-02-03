@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialView</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a9ed2692de.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- nav menu section -->
+    <nav>
+        <div class="nav-left">
+            <img src="images/social-view-blk-small-no-bg-removebg-preview.png" class= "logo" alt="social view logo">
+            <ul>
+                <li><img src="images/notification.png" alt="bell icon"></li>
+                <li><img src="images/inbox.png" alt="envelope icon"></li>
+                <li><img src="images/video.png" alt="play icon"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+
+            <div class="search-box">
+                <img src="images/search.png" alt="search icon">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingMenuToggle()"> <!--- change height when menu clicked --->
+                <img src="images/profile-pic.png" alt="user's profile picture">
+            </div>
+
+        </div>
+        <!----------- settings-menu ---------------->
+        <div class="settings-menu">
+            <!-- dark mode -->
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="user's profile picture">
+                    <div>
+                        <p>George Michealson</p>
+                        <a href="#">Check your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png" alt="feedback icon">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="images/setting.png" class="settings-icon" alt="settings gear icon">
+                    <a href="#">Settings & Privacy <img src="images/arrow.png" alt="right arrow icon" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/help.png" class="settings-icon" alt="question help icon">
+                    <a href="#">Help & Support <img src="images/arrow.png" alt="right arrow icon" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/display.png" class="settings-icon" alt="moon icon">
+                    <a href="#">Display & Accessibility <img src="images/arrow.png" alt="right arrow icon" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/logout.png" class="settings-icon" alt="logout icon">
+                    <a href="#">Logout <img src="images/arrow.png" alt="right arrow icon" width="10px"></a>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <!------------ left-sidebar ----------------- -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="images/news.png" alt="news icon"> latest news</a>
+                <a href="#"><img src="images/friends.png" alt="friend icon"> friends</a>
+                <a href="#"><img src="images/group.png" alt="group icon"> group</a>
+                <a href="#"><img src="images/marketplace.png" alt="marketplace icon"> marketplace</a>
+                <a href="#"><img src="images/watch.png" alt="watch video icon"> watch</a>
+                <a href="#">see more</a>
+            </div>
+            <div class="shortcut-links">
+                <p>your shortcuts</p>
+                <a href="#"><img src="images/data-5606639_1280.jpg" alt="random computer code"> web developers</a>
+                <a href="#"><img src="images/coding-924920_1280.jpg" alt="random computer code"> web responsiveness course</a>
+                <a href="#"><img src="images/laptop-2557468_1280.jpg" alt="person looking at computer"> full stack development</a>
+                <a href="#"><img src="images/button-2076_1280.jpg" alt="help button"> IT experts</a>
+            </div>
+        </div>
+        <!------------ main-content ----------------- -->
+        <div class="main-content">
+
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/upload.png" alt="post story icon">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-1.png" alt="user's profile picture">
+                    <p>Kristine</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.png" alt="user's profile picture">
+                    <p>Jack</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.png" alt="user's profile picture">
+                    <p>Rose</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.png" alt="user's profile picture">
+                    <p>Alex</p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="user's profile picture">
+                    <div>
+                        <p>George Michealson</p>
+                        <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="images/live-video.png" alt="live video icon"> Live Video</a>
+                        <a href="#"><img src="images/photo.png" alt="add photo/video icon"> Photo/Video</a>
+                        <a href="#"><img src="images/feeling.png" alt="smiley face icon"> Feeling/Activity</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="user's profile picture">
+                        <div>
+                            <p>George Michealson</p>
+                            <span> May 29, 2023 2:39 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui et aut molestias iure! <a href="#"> #Coding</a> <a href="#"> #Develop</a></p>
+                <img src="images/laptop-1839876_1280.jpg" class="post-img" alt="laptop with code on desk">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png" alt="thumbs up icon"> 149</div>
+                        <div><img src="images/comments.png" alt="comments icon"> 50</div>
+                        <div><img src="images/share.png" alt="share icon"> 24</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png" alt="user's profile pic"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="user's profile picture">
+                        <div>
+                            <p>George Michealson</p>
+                            <span> April 10, 2023 8:15 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime error maiores commodi nemo iusto voluptatem! <a href="#"> #Relax</a> <a href="#"> #Adventure</a></p>
+                <img src="images/people-2598902_1280.jpg" class="post-img" alt="group of people at bonfire">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png" alt="thumbs up icon"> 123</div>
+                        <div><img src="images/comments.png" alt="comments icon"> 37</div>
+                        <div><img src="images/share.png" alt="share icon"> 13</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png" alt="user's profile pic"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="user's profile picture">
+                        <div>
+                            <p>George Michealson</p>
+                            <span> March 2, 2023 7:32 am</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita! <a href="#"> #Fun</a> <a href="#"> #Downtown</a></p>
+                <img src="images/downtown-2544053_1280.jpg" class="post-img" alt="person in the middle of downtown">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png" alt="thumbs up icon"> 162</div>
+                        <div><img src="images/comments.png" alt="comments icon"> 45</div>
+                        <div><img src="images/share.png" alt="share icon"> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png" alt="user's profile pic"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="user's profile picture">
+                        <div>
+                            <p>George Michealson</p>
+                            <span> Feb 18, 2023 12:28 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                <p class="post-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, eaque natus. <a href="#"> #WFH</a> <a href="#"> #Projects</a></p>
+                <img src="images/office-932926_1280.jpg" class="post-img" alt="person working in home office">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png" alt="thumbs up icon"> 112</div>
+                        <div><img src="images/comments.png" alt="comments icon"> 21</div>
+                        <div><img src="images/share.png" alt="share icon"> 14</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png" alt="user's profile pic"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="user's profile picture">
+                        <div>
+                            <p>George Michealson</p>
+                            <span> January 31, 2023 4:55 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                <p class="post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod eos animi incidunt pariatur. Facere impedit nam nemo. <a href="#"> #Group</a> <a href="#"> #Work</a></p>
+                <img src="images/startup-594090_1280.jpg" class="post-img" alt="group meeting between others">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png" alt="thumbs up icon"> 162</div>
+                        <div><img src="images/comments.png" alt="comments icon"> 45</div>
+                        <div><img src="images/share.png" alt="share icon"> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png" alt="user's profile pic"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <button type="button" class="load-more-btn"> Load More</button>
+
+
+
+
+
+
+
+        </div>
+        <!------------ right-sidebar ----------------- -->
+        <div class="right-sidebar">
+
+            <div class="sidebar-title">
+                <h4>events</h4>
+                <a href="#">see all</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>12</h3>
+                    <span>April</span>
+                </div>
+                <div class="right-event">
+                    <h4>Networking Social</h4>
+                    <p><i class="fa-solid fa-map-location-dot"></i> Moore Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>24</h3>
+                    <span>July</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <p><i class="fa-solid fa-map-location-dot"></i> Moore Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>advertisement</h4>
+                <a href="#">close</a>
+            </div>
+            <img src="images/cyclist-2651460_1280.jpg" class="sidebar-ads" alt="cycling advertisement">
+
+            <div class="sidebar-title">
+                <h4>conversation</h4>
+                <a href="#">hide chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.png" alt="profile image of woman">
+                </div>
+                <p>Kristine Sanchez</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.png" alt="profile image of man">
+                </div>
+                <p>Jack Goffer</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png" alt="profile image of woman">
+                </div>
+                <p>Rose Perrsen</p>
+            </div>
+
+
+            </div>
+        </div>
+        <div class="footer">
+            <p> Copyright 2024 - Heidy Rodriguez</p>
+        </div>
+        <script src="js/script.js"></script>
+</body>
+</html>
